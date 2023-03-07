@@ -6,7 +6,7 @@ function Header() {
         <div className='header-container'>
             <div>Forest City</div>
             <div>Request Your Appointment</div>
-            <div>Phone Number</div>
+            <div>(828) 245-3206</div>
         </div>
     )
 }
