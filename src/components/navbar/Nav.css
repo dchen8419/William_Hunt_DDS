@@ -1,9 +1,6 @@
 .navbar {
     background-color: lightskyblue;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
@@ -12,19 +9,26 @@
 
 .navbar-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     height: 80px;
-    max-width: 1500px;
+    max-width: 2000px;
+
 }
 
 .navbar-logo {
     color: black;
-    justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: left;
+    font-size: 30px;
+    font-weight: bold;
 }
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
