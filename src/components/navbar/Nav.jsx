@@ -1,46 +1,31 @@
-import React from 'react'
-import './Nav.css'
+import {useRef} from 'react'
+import {FaBars, FaTimes} from 'react-icons/fa'
+import '../navbar/Nav.css'
 
 function Nav() {
-    const onHome = () => {
-        window.location.href = '#Home';
-    }
+    const navRef = useRef();
 
-    const onAbout = () => {
-        window.location.href = "#About";
+    const showNavbar = () => {
+        navRef.current.classList.toggle(
+            "responsive_nav"
+            )
     }
-
-    const onContact = () => {
-        window.location.href = "#Contact";
-    } 
 
     return (
-        <>
-            <nav className='navbar'>
-                <div className='navbar-container'>
-                    <a className='navbar-logo' href='#Home' aria-hidden="true">
-                        William Hunt, DDS Family Dentistry
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="#Home" onClick={onHome}>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#About" onClick={onAbout}>
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Contact" onClick={onContact}>
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </>
+        <header>
+        <h3>William Hunt DDS</h3>
+        <nav ref={navRef}>
+            <a href="/#">Home</a>
+            <a href="/#">About</a>
+            <a href="/#">Contact</a>
+            <button className='navbar-btn nav-close-btn' onClick={showNavbar}>
+                <FaTimes />
+            </button>
+        </nav>
+        <button className='navbar-btn' onClick={showNavbar}>
+            <FaBars />
+        </button>
+    </header>
     )
 }
 
