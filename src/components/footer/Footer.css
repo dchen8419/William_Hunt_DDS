@@ -1,0 +1,33 @@
+.footer-container {
+    background-color: lightblue;
+}
+
+.footer-information {
+    display: inline;
+    padding: 0;
+}
+
+.footer-contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-container-item {
+    margin: 40px;
+    width: 500px;
+}
+
+.footer-container-contact {
+    min-height: 100px;
+}
+
+.footer-container-hours {
+    min-height: 100px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+}
