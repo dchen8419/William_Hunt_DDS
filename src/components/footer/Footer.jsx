@@ -7,17 +7,16 @@ function Footer() {
             <ul className='footer-information'>
                 <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
-                        <h4>Contact</h4>
-                        <h5>Address</h5>
-                        <p>Street Address</p>
-                        <p>City, State, Zip</p>
-                        <h5>Contact for Hiring</h5>
-                        <p>Phone Number</p>
+                        <h3>Address</h3>
+                        <p>127 E Trade St # 100</p>
+                        <p>Forest City, NC 28043</p>
+                        <h4>Phone Number:</h4>
+                        <p>1 (828) 245 - 3206</p>
                     </div>
                     <div className='footer-container-item footer-container-hours'>
-                        <h3>Open 4 days</h3>
+                        <h4>Open Monday - Thursday</h4>
                         <p>Hours</p>
-                        <p>Hours of operation</p>
+                        <p>8:00 AM - 5:00 PM</p>
                     </div>
                 </div>
                 <h5 className='footer-copyright'>David Chen Luna Media LLC</h5>
