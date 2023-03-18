@@ -3,7 +3,7 @@ import '../footer/Footer.css'
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <footer className='footer-container'>
             <ul className='footer-information'>
                 <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
@@ -21,7 +21,7 @@ function Footer() {
                 </div>
                 <h5 className='footer-copyright'>David Chen Luna Media LLC</h5>
             </ul>
-        </div>
+        </footer>
   )
 }
 
