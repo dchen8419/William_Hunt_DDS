@@ -1,6 +1,7 @@
 import {useRef} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import '../navbar/Nav.css'
+import icon from '../../assets/dentist_icon.png'
 
 function Nav() {
     const navRef = useRef();
@@ -13,7 +14,9 @@ function Nav() {
 
     return (
         <header>
-        <h3>William Hunt DDS</h3>
+            <div>
+                <img alt='dentalicon' src={icon} className="dentalicon"/>
+            </div>
         <nav ref={navRef}>
             <a href="/#">Home</a>
             <a href="/#">About</a>
