@@ -1,0 +1,11 @@
+.banner_container {
+    background-color: rgb(146, 148, 148);
+    text-align: center;
+}
+
+.banner_pic {
+    margin: auto;
+    display: block;
+    border: 3px solid black;
+    width: 50%;
+}
