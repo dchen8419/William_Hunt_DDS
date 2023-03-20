@@ -1,3 +1,19 @@
 .about-container {
     background-color: lightgray;
 }
+
+.about_img_container {
+    padding: 10px;
+}
+
+.about_welcome_container {
+    padding: 30px;
+}
+
+.about_welcome_title {
+    text-align: center;
+}
+
+.about_paragraph {
+    padding-inline: 150px;
+}
