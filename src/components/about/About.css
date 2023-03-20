@@ -15,5 +15,12 @@
 }
 
 .about_paragraph {
-    padding-inline: 150px;
+    padding-inline: 90px;
+}
+
+.about_pic {
+    margin: auto;
+    display: block;
+    border: 3px solid black;
+    width: 50%;
 }

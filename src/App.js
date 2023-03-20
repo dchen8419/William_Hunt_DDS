@@ -1,10 +1,10 @@
 import './App.css';
 import About from './components/about/About';
 import Banner from './components/banner/Banner';
-import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/navbar/Nav';
+import Procedures from './components/procedures/Procedures';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Nav />
       <Banner />
       <About />
-      <Contact />
+      <Procedures />
       <Footer />
     </div>
   );
