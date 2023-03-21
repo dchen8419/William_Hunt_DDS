@@ -30,8 +30,20 @@
 }
 
 .procedure_container_extractions {
-    min-height: 300px;
+    min-height: 100px;
 }
+
+.procedure_container_dentures {
+    min-height: 100px;
+}
+
+.procedure_container_partials {
+    min-height: 200px;
+}
+
+
+
+
 
 .procedure_container-item:hover {
     box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
