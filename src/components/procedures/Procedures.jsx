@@ -27,6 +27,21 @@ function Procedures() {
                             img={Extraction} title='Extractions' about='Comfort and Confidence are just as important as your teeth'
                         />
                     </div>
+                    <div className='procedure_container-item procedure_container_dentures'>
+                        <ProcedureCard 
+                            title='Dentures' about='Let us help you fit new dentures'
+                        />
+                    </div>
+                    <div className='procedure_container-item procedure_container_partials'>
+                        <ProcedureCard 
+                            title='Partials' about='Creating state-of-the-art partials'
+                        />
+                    </div>
+                    <div className='procedure_container-item procedure_container_endodontic'>
+                        <ProcedureCard 
+                            title='Endodotics' about='We can do root canals'
+                        />
+                    </div>
                 </div>
             </ul>
         </div>
