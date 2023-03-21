@@ -1,3 +1,32 @@
 .procedure_background {
     background-color: rgb(146, 148, 148);
 }
+
+.procedure_ul_list {
+    display: inline;
+}
+
+.procedure_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.procedure_container-item {
+    margin: 60px;
+    width: 500px;
+    background-color: white;
+}
+
+.procedure_container_crowns_bridges {
+    min-height: 100px;
+}
+
+.procedure_container_restorations {
+    min-height: 200px;
+}
+
+.procedure_container_extractions {
+    min-height: 300px;
+}
