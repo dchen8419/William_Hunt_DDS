@@ -27,6 +27,10 @@ function Procedures() {
                             img={Extraction} title='Extractions' about='Comfort and Confidence are just as important as your teeth'
                         />
                     </div>
+                </div>
+            </ul>
+            <ul className='procedure_ul_list'>
+                <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_dentures'>
                         <ProcedureCard 
                             title='Dentures' about='Let us help you fit new dentures'
