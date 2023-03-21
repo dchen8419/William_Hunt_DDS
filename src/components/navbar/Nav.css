@@ -51,7 +51,7 @@ nav {
 }
 
 .dentalicon {
-    width: 15%;
+    width: 14%;
     border-radius: 50%;
 }
 
@@ -91,4 +91,7 @@ nav {
         font-size: 1.5rem;
     }
     
+    .dentalicon {
+        width: 95px;
+    }
 }

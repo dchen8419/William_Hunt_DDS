@@ -30,7 +30,7 @@
 }
 
 .procedure_container_extractions {
-    min-height: 100px;
+    min-height: 300px;
 }
 
 .procedure_container_dentures {
@@ -41,6 +41,9 @@
     min-height: 200px;
 }
 
+.procedure_container_endodontic {
+    min-height: 300px;
+}
 
 
 
