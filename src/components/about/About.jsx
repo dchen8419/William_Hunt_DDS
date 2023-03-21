@@ -13,11 +13,11 @@ function About() {
       </div>
       <div className='about_paragraph'>
         <h3>
-          Dr. William (Bill) Hunt, DDS PA has always been interested in providing the best dental care in Forest City 
-          for over 30 years. A Forest city native, Dr. Bill graduated from UNC - Chapel Hill Dental School in 1978
-          and has been serving the North Carolina community ever since. Dr. Bill is committed to his high standards
+          Dr. William (Bill) Hunt, D.D.S. P.A. has always been interested in providing the best dental care in Forest City 
+          for over 40 years. A Forest City native, Dr. Hunt graduated from UNC - Chapel Hill Dental School in 1978.
+          He has been serving the North Carolina community ever since. Dr. Hunt is committed to his high standards
           and morals in continuing to pursue knowledge in the cutting edge advancements of dentisty. He is very devoted to his community
-          serving the dental bus on his free time to provide help for under privilege people in his local community. 
+          serving the dental bus on his free time to provide help for people in need in his local community. 
         </h3>
       </div>
     </div>
