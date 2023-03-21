@@ -52,6 +52,7 @@ nav {
 
 .dentalicon {
     width: 15%;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 1024px) {

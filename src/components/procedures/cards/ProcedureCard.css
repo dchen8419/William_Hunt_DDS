@@ -1,13 +1,23 @@
-img {
-    border-radius: 50%;
-}
-
 .procedure_card_container {
     padding-top: 15px;
     text-align: center;
-    border-style: solid;
+}
+
+.procedure_card_image_container {
+    display: flex;
+    justify-content: center;
+}
+
+.procedure_card_image {
+    border-radius: 50%;
+    width: 200px;
+    object-fit: contain;
 }
 
 .procedure_card_title {
     padding-bottom: 5px;
+}
+
+.procedure_card_about {
+    padding-inline: 50px;
 }
