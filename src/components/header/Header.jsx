@@ -7,9 +7,18 @@ import { SlCalender } from 'react-icons/sl'
 function Header() {
     return (
         <div className='header-container'>
-            <div className='header-location'> <ImLocation /> Forest City, NC</div>
-            <div className='header-appointment'> <SlCalender /> Request Your Appointment</div>
-            <div className='header-phone'> <HiPhone /> 828-245-3206</div>
+            <div className='header-location'> 
+                <span className='icon'><ImLocation /></span>
+                <span className='text'>Forest City, NC</span>
+            </div>
+            <div className='header-appointment'> 
+                <span className='icon'><SlCalender /></span>
+                <span className='text'>Request Your Appointment</span>
+            </div>
+            <div className='header-phone'> 
+                <span className='icon'><HiPhone /></span>
+                <span className='text'>828-245-3206</span>
+            </div>
         </div>
     )
 }
