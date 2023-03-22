@@ -9,7 +9,7 @@ import '../../components/procedures/Procedures.css'
 
 function Procedures() {
     return (
-        <div className='procedure_background'>
+        <div id="About"className='procedure_background'>
             <ul className='procedure_ul_list'>
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>

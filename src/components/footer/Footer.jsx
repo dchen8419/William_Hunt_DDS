@@ -2,8 +2,8 @@ import React from 'react'
 import '../footer/Footer.css'
 
 function Footer() {
-  return (
-    <footer className='footer-container'>
+    return (
+        <footer id="Contact" className='footer-container'>
             <ul className='footer-information'>
                 <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
@@ -22,7 +22,7 @@ function Footer() {
                 <h5 className='footer-copyright'>David Chen Luna Media LLC</h5>
             </ul>
         </footer>
-  )
+    )
 }
 
 export default Footer
