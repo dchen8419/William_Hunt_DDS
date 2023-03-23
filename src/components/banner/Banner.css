@@ -1,5 +1,7 @@
 .banner_container {
     background-color: rgb(146, 148, 148);
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
