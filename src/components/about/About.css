@@ -3,7 +3,7 @@
 }
 
 .about_img_container {
-    padding: 10px;
+    padding-top: 30px;
 }
 
 .about_welcome_container {
@@ -15,8 +15,8 @@
 }
 
 .about_paragraph {
-    padding-inline: 70px;
-    padding-bottom: 40px;
+    padding-inline: 180px;
+    padding-bottom: 30px;
     line-height: 1.5;
 }
 
@@ -26,4 +26,10 @@
     border: 3px solid black;
     width: 50%;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about_paragraph {
+        padding-inline: 50px;
+    }
 }
