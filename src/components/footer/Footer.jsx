@@ -11,7 +11,7 @@ function Footer() {
                         <p>127 E Trade St # 100</p>
                         <p>Forest City, NC 28043</p>
                         <h4>Phone Number:</h4>
-                        <p>1 (828) 245 - 3206</p>
+                        <p>(828)245-3206</p>
                     </div>
                     <div className='footer-container-item footer-container-hours'>
                         <h4>Open Monday - Thursday</h4>
@@ -19,7 +19,7 @@ function Footer() {
                         <p>8:00 AM - 5:00 PM</p>
                     </div>
                 </div>
-                <h5 className='footer-copyright'>David Chen Luna Media LLC</h5>
+                <h5 className='footer-copyright'>Luna DC Media LLC</h5>
             </ul>
         </footer>
     )
