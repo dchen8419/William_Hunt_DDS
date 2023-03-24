@@ -12,6 +12,7 @@
     --textColor: black;
 }
 
+
 header {
     display: flex;
     align-items: center;
@@ -20,6 +21,8 @@ header {
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
+    position: sticky;
+    top: 0;
 }
 
 nav a{
