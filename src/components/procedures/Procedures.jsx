@@ -14,7 +14,7 @@ function Procedures() {
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>
                         <ProcedureCard
-                            img={Crown_Bridges} title='Crowns and Bridges' about='We can create impressions and create optimal edges of area for perfect crowns and bridges'
+                            img={Crown_Bridges} title='Crowns and Bridges' about='We create impressions and optimaize areas for perfect crowns and bridges'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_restorations'>
@@ -43,7 +43,7 @@ function Procedures() {
                     </div>
                     <div className='procedure_container-item procedure_container_endodontic'>
                         <ProcedureCard 
-                            title='Endodotics' about='We can do root canals'
+                            title='Endodotics' about='We treat root canals'
                         />
                     </div>
                 </div>

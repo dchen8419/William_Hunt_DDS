@@ -8,10 +8,13 @@ function Footer() {
                 <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
                         <h3>Address</h3>
-                        <p>127 E Trade St # 100</p>
+                        <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA'>
+                            127 E Trade St # 100
+                        </a>
                         <p>Forest City, NC 28043</p>
+                        <br />
                         <h4>Phone Number:</h4>
-                        <p>(828)245-3206</p>
+                        <a href="tel:828-245-3206">(828)245-3206</a>
                     </div>
                     <div className='footer-container-item footer-container-hours'>
                         <h4>Open Monday - Thursday</h4>

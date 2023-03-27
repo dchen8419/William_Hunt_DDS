@@ -10,8 +10,9 @@
 
 .procedure_card_image {
     border-radius: 50%;
-    width: 200px;
+    height: 200px;
     object-fit: contain;
+    padding-top: 5px;
 }
 
 .procedure_card_title {
@@ -20,4 +21,5 @@
 
 .procedure_card_about {
     padding-inline: 50px;
+    padding-bottom: 10px;
 }
