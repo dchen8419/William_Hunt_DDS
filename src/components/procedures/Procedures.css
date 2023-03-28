@@ -1,5 +1,10 @@
 .procedure_background {
-    background-color: rgb(146, 148, 148);
+    background-color: rgb(168, 169, 169);
+}
+
+.procedure_dental_service {
+    text-align: center;
+    padding-top: 20px;
 }
 
 .procedure_ul_list {
@@ -46,5 +51,5 @@
 }
 
 .procedure_container-item:hover {
-    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+    box-shadow: 0 4px 8px 0 lightgray, 0 6px 20px 0 lightgray;
 }

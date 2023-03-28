@@ -4,11 +4,11 @@ import picBanner from '../../assets/banner_pic.png'
 
 function About() {
   return (
-    <div className='about-container'>
+    <div  className='about-container'>
       <div className='about_img_container'>
-        <img alt='about_picture' src={picBanner} className="about_pic"/>
+        <img id="About" alt='about_picture' src={picBanner} className="about_pic"/>
       </div>
-      <div className='about_welcome_container'>
+      <div  className='about_welcome_container'>
         <h2 className='about_welcome_title'>Welcome to William Hunt, DDS PA!</h2>
       </div>
       <div className='about_paragraph'>

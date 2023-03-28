@@ -15,7 +15,8 @@ import '../../components/procedures/Procedures.css';
 
 function Procedures() {
     return (
-        <div id="About"className='procedure_background'>
+        <div id="Services" className='procedure_background'>
+            <h1 className='procedure_dental_service'>Dental Services</h1>
             <ul className='procedure_ul_list'>
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>
