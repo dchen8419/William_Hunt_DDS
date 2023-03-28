@@ -15,7 +15,7 @@
 }
 
 .about_paragraph {
-    padding-inline: 180px;
+    padding-inline: 200px;
     padding-bottom: 30px;
     line-height: 1.5;
 }
@@ -23,7 +23,7 @@
 .about_pic {
     margin: auto;
     display: block;
-    border: 3px solid black;
+    border: 1px solid black;
     width: 50%;
     border-radius: 50%;
 }
