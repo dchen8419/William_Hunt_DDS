@@ -14,12 +14,12 @@ function Procedures() {
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>
                         <ProcedureCard
-                            img={Crown_Bridges} title='Crowns and Bridges' about='We create impressions and optimaize areas for perfect crowns and bridges'
+                            img={Crown_Bridges} title='Crowns, Veneers and Bridges' about='We create impressions and optimaize areas for perfect crowns and bridges'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_restorations'>
                         <ProcedureCard 
-                            img={Restoration} title='Restoration' about='Let us help you restore your smile for a more confident you!'
+                            img={Restoration} title='Composite Restorations' about='Let us help you restore your smile for a more confident you!'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_extractions'>
@@ -33,12 +33,12 @@ function Procedures() {
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_dentures'>
                         <ProcedureCard 
-                            title='Dentures' about='Let us help you fit new dentures'
+                            title='Dentures and Partials' about='Let us help you fit new dentures'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_partials'>
                         <ProcedureCard 
-                            title='Partials' about='Creating state-of-the-art partials'
+                            title='Bleaching' about='Creating state-of-the-art partials'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_endodontic'>
