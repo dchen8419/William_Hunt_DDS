@@ -1,9 +1,15 @@
-import React from 'react'
-import ProcedureCard from './cards/ProcedureCard'
-import Crown_Bridges from '../../assets/crowns_bridges.png'
-import Restoration from '../../assets/restoration.png'
-import Extraction from '../../assets/extraction.png'
-import '../../components/procedures/Procedures.css'
+import React from 'react';
+import ProcedureCard from './cards/ProcedureCard';
+import Crowns from '../../assets/crown.png'
+import Bridges from '../../assets/bridges.png';
+import Veneers from '../../assets/veneers.png';
+import Dentures from '../../assets/dentures.png'
+import Extraction from '../../assets/extraction.png';
+import Partials from '../../assets/partials.png';
+import Restorations from '../../assets/restoration.png';
+import Bleaching from '../../assets/bleaching.png';
+import Endodontics from '../../assets/root_canal.png';
+import '../../components/procedures/Procedures.css';
 
 
 
@@ -14,17 +20,17 @@ function Procedures() {
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>
                         <ProcedureCard
-                            img={Crown_Bridges} title='Crowns, Veneers and Bridges' about='We create impressions and optimaize areas for perfect crowns and bridges'
+                            img={Crowns} title='Crowns' about='We create impressions for perfect crowns'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_restorations'>
                         <ProcedureCard 
-                            img={Restoration} title='Composite Restorations' about='Let us help you restore your smile for a more confident you!'
+                            img={Veneers} title='Veneers' about='Let us help you improve your smile!'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_extractions'>
                         <ProcedureCard 
-                            img={Extraction} title='Extractions' about='Comfort and Confidence are just as important as your teeth'
+                            img={Bridges} title='Bridges' about='Using state-of-the-art tools to optimize area for comfortable bridges'
                         />
                     </div>
                 </div>
@@ -33,17 +39,36 @@ function Procedures() {
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_dentures'>
                         <ProcedureCard 
-                            title='Dentures and Partials' about='Let us help you fit new dentures'
+                            img={Restorations} title='Composite Restorations' about='We can repair and improve your oral health'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_partials'>
                         <ProcedureCard 
-                            title='Bleaching' about='Creating state-of-the-art partials'
+                            img={Dentures} title='Dentures' about='Let us help you fit new dentures'
                         />
                     </div>
                     <div className='procedure_container-item procedure_container_endodontic'>
                         <ProcedureCard 
-                            title='Endodotics' about='We treat root canals'
+                            img={Bleaching} title='Bleaching' about='Let us whiten your smile!'
+                        />
+                    </div>
+                </div>
+            </ul>
+            <ul className='procedure_ul_list'>
+                <div className='procedure_container'>
+                    <div className='procedure_container-item procedure_container_dentures'>
+                        <ProcedureCard 
+                            img={Endodontics} title='Endodontics' about='We create treatments for your oral health'
+                        />
+                    </div>
+                    <div className='procedure_container-item procedure_container_partials'>
+                        <ProcedureCard 
+                            img={Extraction} title='Extractions' about='Conservative approach with all tooth extractions'
+                        />
+                    </div>
+                    <div className='procedure_container-item procedure_container_partials'>
+                        <ProcedureCard 
+                            img={Partials} title='Partials' about='Creating state-of-the-art partials'
                         />
                     </div>
                 </div>

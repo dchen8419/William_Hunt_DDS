@@ -18,7 +18,7 @@
     margin-bottom: 30px;
     width: 400px;
     background-color: lightgray;
-    border: 4px solid black;
+    border: 1px solid black;
 }
 
 .procedure_container_crowns_bridges {
@@ -44,9 +44,6 @@
 .procedure_container_endodontic {
     min-height: 300px;
 }
-
-
-
 
 .procedure_container-item:hover {
     box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
