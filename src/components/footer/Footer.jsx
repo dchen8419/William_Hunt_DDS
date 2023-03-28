@@ -22,7 +22,7 @@ function Footer() {
                         <p>8:00 AM - 5:00 PM</p>
                     </div>
                 </div>
-                <h5 className='footer-copyright'>Luna DC Media LLC</h5>
+                <h5 className='footer-copyright'> &copy;{new Date().getFullYear()} Luna DC Media LLC</h5>
             </ul>
         </footer>
     )

@@ -24,6 +24,7 @@ function Nav() {
         <nav ref={navRef}>
             <a href="#Home" onClick={showNavbar}>Home</a>
             <a href="#About" onClick={showNavbar}>About</a>
+            <a href="#Services" onClick={showNavbar}>Dental Services</a>
             <a href="#Contact" onClick={showNavbar}>Contact</a>
             <button className='navbar-btn nav-close-btn' onClick={showNavbar} >
                 <FaTimes />
