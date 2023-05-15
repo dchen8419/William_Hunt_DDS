@@ -13,13 +13,14 @@ function About() {
       </div>
       <div className='about_paragraph'>
         <h3>
-          Dr. William (Bill) Hunt, D.D.S. P.A. has always been interested in providing the best dental care in Forest City 
-          for over 40 years. A Forest City native, Dr. Hunt graduated from UNC - Chapel Hill Dental School in 1978.
-          He has been serving the North Carolina community ever since. Dr. Hunt is committed to his high standards
-          and morals in continuing to pursue knowledge in the cutting edge advancements of dentisty using state-of-the-art
-          Cone Beam Computed Tomograph (CBCT). 
-          He is very devoted to his community
-          serving the dental bus on his free time to provide help for people in need in his local community. 
+            Welcome to the website of Dr. William (Bill) Hunt, D.D.S. P.A.! 
+            Dr. Hunt has been providing exceptional dental care to the Forest City community for over 40 years. 
+            A native of Forest City, Dr. Hunt graduated from UNC - Chapel Hill Dental School in 1978 and has been serving 
+            the North Carolina community ever since. He is committed to maintaining high standards and morals in his practice 
+            and continuously seeks to expand his knowledge in the cutting-edge advancements of dentistry, utilizing state-of-the-art 
+            Cone Beam Computed Tomography (CBCT) technology. In addition to his passion for dentistry, 
+            Dr. Hunt is very devoted to his local community. He volunteers his time serving on the dental bus to provide care 
+            to those in need. With Dr. Hunt, you can trust that your dental health is in good hands. 
         </h3>
       </div>
     </div>
