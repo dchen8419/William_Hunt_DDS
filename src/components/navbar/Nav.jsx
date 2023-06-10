@@ -19,7 +19,7 @@ function Nav() {
     return (
         <header>
             <div id="home">
-                <img alt='dentalicon' src={icon} className="dentalicon"/>
+                <img alt='dentist and family practice' src={icon} className="dentalicon"/>
             </div>
         <nav ref={navRef}>
             <a href="#Home" onClick={showNavbar}>Home</a>
