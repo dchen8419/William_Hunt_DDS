@@ -1,30 +1,35 @@
 import React from 'react'
 import '../footer/Footer.css'
 
-function Footer() {
+const Footer = () => {
     return (
-        <footer id="Contact" className='footer-container'>
-            <ul className='footer-information'>
-                <div className='footer-contact-container'>
-                    <div className='footer-container-item footer-container-contact'>
-                        <h3>Address</h3>
+        <div id="Contact" className='footer-container'>
+            <div className='footer-links'>
+                <div className='footer-link-wrapper'>
+                    <div className='footer-link-items'>
                         <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA'>
-                            <p>127 E Trade St # 100</p>
-                            <p>Forest City, NC 28043</p>
+                            <h2>Contact</h2>
+                                <p>127 E Trade St # 100</p>
+                                <p>Forest City, NC 28043</p>
+                            <a href="tel:828-245-3206">(828) 245-3206</a>
                         </a>
-                        <br />
-                        <h4>Phone Number:</h4>
-                        <a href="tel:828-245-3206">(828)245-3206</a>
                     </div>
-                    <div className='footer-container-item footer-container-hours'>
-                        <h4>Open Monday - Thursday</h4>
-                        <p>Hours</p>
+                    <div className='footer-link-items'>
+                        <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA'>
+                        <h2>Hours</h2>
+                        <p>Monday - Thursday</p>
                         <p>8:00 AM - 5:00 PM</p>
+                        </a>
+                        
                     </div>
                 </div>
-                <h5 className='footer-copyright'> &copy;{new Date().getFullYear()} Luna DC Media LLC</h5>
-            </ul>
-        </footer>
+            </div>
+            <section>
+                <div>
+                    <small className='website-rights'>David Chen &copy;{new Date().getFullYear()} Luna Media LLC</small>
+                </div>
+            </section>
+        </div>
     )
 }
 
