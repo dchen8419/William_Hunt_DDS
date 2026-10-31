@@ -15,7 +15,7 @@ function Banner() {
                 </div>
                 <div className="hero-note"><strong>40+</strong><span>years caring for<br />our community</span></div>
             </div>
-            <div className="hero-image" role="img" aria-label="A welcoming dental practice" />
+            <div className="hero-image" role="img" aria-label="Stock photo of a dental treatment room" />
         </section>
     )
 }

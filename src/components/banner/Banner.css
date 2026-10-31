@@ -23,7 +23,8 @@
 .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid #cbded5; width: max-content; }
 .hero-note strong { font: 800 1.75rem 'Manrope', sans-serif; color: var(--teal); }
 .hero-note span { color: var(--muted); font-size: .75rem; line-height: 1.4; }
-.hero-image { min-height: 430px; border-radius: 48% 48% 8px 8px; background: linear-gradient(180deg, rgba(20,58,60,.02), rgba(20,58,60,.12)), url('../../assets/banner_pic.png') center 43% / cover; box-shadow: var(--shadow); }
+/* Photo: Kari Bjorn Photography, Unsplash: https://unsplash.com/photos/a-dental-room-with-a-desk-and-chairs-Fdku_oMrDvk */
+.hero-image { min-height: 430px; border-radius: 48% 48% 8px 8px; background: linear-gradient(180deg, rgba(20,58,60,.02), rgba(20,58,60,.12)), url('../../assets/dental-office-hero.jpg') center 43% / cover; box-shadow: var(--shadow); }
 @media (max-width: 760px) {
   .banner_container { grid-template-columns: 1fr; gap: 32px; padding: 60px 22px 46px; }
   .hero-content { max-width: 560px; }

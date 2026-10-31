@@ -10,5 +10,8 @@
 .about-link span { color: var(--teal); }
 @media (max-width: 760px) {
   .about-container { grid-template-columns: 1fr; gap: 42px; padding: 76px 24px; }
-  .about_img_container { display: none; }
+  .about-copy { order: 1; }
+  .about_img_container { order: 2; width: min(100%, 430px); margin: 12px auto 0; }
+  .about_img_container::before { width: 72%; height: 82%; top: -12px; left: -12px; }
+  .about_pic { height: clamp(300px, 90vw, 380px); }
 }
