@@ -17,14 +17,16 @@ function Footer() {
                 <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
                         <h3>{React.createElement(ImLocation)} Find us</h3>
-                        <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA' target="_blank" rel="noreferrer">
+                        <address>
+                          <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA' target="_blank" rel="noreferrer">
                             <p>127 E Trade St # 100</p>
                             <p>Forest City, NC 28043</p>
-                        </a>
+                          </a>
+                        </address>
                     </div>
                     <div className='footer-container-item footer-container-hours'>
                         <h3>Office hours</h3>
-                        <p><strong>Monday – Thursday</strong><br />8:00 AM – 5:00 PM</p>
+                        <p><strong>Monday – Thursday</strong><br /><time dateTime="08:00">8:00 AM</time> – <time dateTime="17:00">5:00 PM</time></p>
                         <p>Friday – Sunday · Closed</p>
                     </div>
                 </div>

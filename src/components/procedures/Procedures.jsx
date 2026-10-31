@@ -16,8 +16,8 @@ import '../../components/procedures/Procedures.css';
 function Procedures() {
     return (
         <section id="Services" className='procedure_background'>
-            <div className="services-heading"><span className="section-kicker">Thoughtful care, all around</span><h2 className='procedure_dental_service'>Services for a healthier smile</h2><p>From preventive visits to restorative care, find the support your smile needs.</p></div>
-            <ul className='procedure_ul_list'>
+            <div className="services-heading"><span className="section-kicker">Dental care in Forest City, NC</span><h2 className='procedure_dental_service'>Dental services</h2><p>Explore dental services available at William Hunt, DDS PA. Call the office with questions or to ask about scheduling.</p></div>
+            <div className='procedure_ul_list'>
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>
                         <ProcedureCard
@@ -35,8 +35,8 @@ function Procedures() {
                         />
                     </div>
                 </div>
-            </ul>
-            <ul className='procedure_ul_list'>
+            </div>
+            <div className='procedure_ul_list'>
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_dentures'>
                         <ProcedureCard 
@@ -54,8 +54,8 @@ function Procedures() {
                         />
                     </div>
                 </div>
-            </ul>
-            <ul className='procedure_ul_list'>
+            </div>
+            <div className='procedure_ul_list'>
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_dentures'>
                         <ProcedureCard 
@@ -73,7 +73,7 @@ function Procedures() {
                         />
                     </div>
                 </div>
-            </ul>
+            </div>
         </section>
     )
 }
