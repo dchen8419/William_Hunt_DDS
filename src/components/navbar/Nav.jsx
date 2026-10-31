@@ -1,19 +1,15 @@
-import { useRef } from 'react'
+import { useEffect, useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import '../navbar/Nav.css'
 import icon from '../../assets/dentist_icon.png'
 
 function Nav() {
-    const navRef = useRef();
+    const [menuOpen, setMenuOpen] = useState(false)
 
-
-
-
-    const showNavbar = () => {
-        navRef.current.classList.toggle(
-            "responsive_nav"
-        )
-    }
+    useEffect(() => {
+        document.body.style.overflow = menuOpen ? 'hidden' : ''
+        return () => { document.body.style.overflow = '' }
+    }, [menuOpen])
 
 
     return (
@@ -22,17 +18,17 @@ function Nav() {
                 <img alt='' src={icon} className="dentalicon"/>
                 <span className="brand-copy"><strong>William Hunt, DDS</strong><small>Family Dentistry · Forest City, NC</small></span>
             </a>
-        <nav ref={navRef}>
-            <a href="#Home" onClick={showNavbar}>Home</a>
-            <a href="#About" onClick={showNavbar}>About</a>
-            <a href="#Services" onClick={showNavbar}>Dental Services</a>
-            <a href="#Contact" onClick={showNavbar}>Contact</a>
-            <button aria-label="Close navigation" className='navbar-btn nav-close-btn' onClick={showNavbar} >
+        <nav id="primary-navigation" className={menuOpen ? 'responsive_nav' : ''} aria-label="Main navigation">
+            <a href="#Home" onClick={() => setMenuOpen(false)}>Home</a>
+            <a href="#About" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#Services" onClick={() => setMenuOpen(false)}>Dental Services</a>
+            <a href="#Contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <button type="button" aria-label="Close navigation" className='navbar-btn nav-close-btn' onClick={() => setMenuOpen(false)} >
                 <FaTimes />
             </button>
         </nav>
             <a href="tel:828-245-3206" className="nav-cta">Call our office</a>
-            <button aria-label="Open navigation" className='navbar-btn' onClick={showNavbar} >
+            <button type="button" aria-label="Open navigation" aria-expanded={menuOpen} aria-controls="primary-navigation" className='navbar-btn nav-open-btn' onClick={() => setMenuOpen(true)} >
                 <FaBars />
             </button>
         </header>
