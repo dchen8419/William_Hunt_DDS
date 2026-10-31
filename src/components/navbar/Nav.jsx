@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import '../navbar/Nav.css'
-import icon from '../../assets/dentist_icon.png'
+
+const icon = `${process.env.PUBLIC_URL}/favicon.svg`
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false)
