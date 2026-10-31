@@ -17,12 +17,11 @@ function Nav() {
 
 
     return (
-        <header className="site-nav">
-            <a id="home" className="brand" href="#Home" aria-label="William Hunt Dentistry home">
-                <img alt='' src={icon} className="dentalicon"/>
-                <span className="brand-copy"><strong>William Hunt, DDS</strong><small>Family Dentistry · Forest City, NC</small></span>
-            </a>
-        <nav ref={navRef} aria-label="Main navigation">
+        <header>
+            <div id="home">
+                <img alt='dentist and family practice' src={icon} className="dentalicon"/>
+            </div>
+        <nav ref={navRef}>
             <a href="#Home" onClick={showNavbar}>Home</a>
             <a href="#About" onClick={showNavbar}>About</a>
             <a href="#Services" onClick={showNavbar}>Dental Services</a>

@@ -14,7 +14,7 @@ function Header() {
                 <span className='text'><a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA'> Forest City, NC</a></span>
             </div>
             <div className='header-appointment'> 
-                <span className='icon'><a href='mailto:dchen8419@gmail.com'><MdEmail /></a></span>
+                <span className='icon'><a href='mailto:images_huntdr@att.net'><MdEmail /></a></span>
                 <span className='text'><a href="mailto:images_huntdr@att.net"> Email For Appointment</a></span>
             </div>
             <div className='header-phone'> 
