@@ -1,29 +1,29 @@
 import React from 'react'
 import '../footer/Footer.css'
+import { HiPhone } from 'react-icons/hi'
+import { ImLocation } from 'react-icons/im'
 
 function Footer() {
     return (
         <footer id="Contact" className='footer-container'>
-            <ul className='footer-information'>
-                <div className='footer-contact-container'>
+            <div className="footer-inner">
+              <div className="footer-top"><div><span className="section-kicker">We’re here for you</span><h2>Let’s take care<br />of your smile.</h2></div><a className="footer-call" href="tel:828-245-3206">Call (828) 245-3206 <span>↗</span></a></div>
+              <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
-                        <h3>Address</h3>
-                        <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA'>
+                        <h3><ImLocation /> Find us</h3>
+                        <a href='https://goo.gl/maps/Qkx3bvWBcKN29rfUA' target="_blank" rel="noreferrer">
                             <p>127 E Trade St # 100</p>
                             <p>Forest City, NC 28043</p>
                         </a>
-                        <br />
-                        <h4>Phone Number:</h4>
-                        <a href="tel:828-245-3206">(828)245-3206</a>
                     </div>
                     <div className='footer-container-item footer-container-hours'>
-                        <h4>Open Monday - Thursday</h4>
-                        <p>Hours</p>
-                        <p>8:00 AM - 5:00 PM</p>
+                        <h3>Office hours</h3>
+                        <p><strong>Monday – Thursday</strong><br />8:00 AM – 5:00 PM</p>
+                        <p>Friday – Sunday · Closed</p>
                     </div>
                 </div>
-                <h5 className='footer-copyright'> &copy;{new Date().getFullYear()} Luna DC Media LLC</h5>
-            </ul>
+                <div className="footer-bottom"><span>© {new Date().getFullYear()} William Hunt, DDS PA</span><a href="tel:828-245-3206"><HiPhone /> (828) 245-3206</a></div>
+            </div>
         </footer>
     )
 }

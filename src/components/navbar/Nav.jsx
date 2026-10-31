@@ -17,20 +17,22 @@ function Nav() {
 
 
     return (
-        <header>
-            <div id="home">
-                <img alt='dentalicon' src={icon} className="dentalicon"/>
-            </div>
-        <nav ref={navRef}>
+        <header className="site-nav">
+            <a id="home" className="brand" href="#Home" aria-label="William Hunt Dentistry home">
+                <img alt='' src={icon} className="dentalicon"/>
+                <span className="brand-copy"><strong>William Hunt, DDS</strong><small>Family Dentistry · Forest City, NC</small></span>
+            </a>
+        <nav ref={navRef} aria-label="Main navigation">
             <a href="#Home" onClick={showNavbar}>Home</a>
             <a href="#About" onClick={showNavbar}>About</a>
             <a href="#Services" onClick={showNavbar}>Dental Services</a>
             <a href="#Contact" onClick={showNavbar}>Contact</a>
-            <button className='navbar-btn nav-close-btn' onClick={showNavbar} >
+            <button aria-label="Close navigation" className='navbar-btn nav-close-btn' onClick={showNavbar} >
                 <FaTimes />
             </button>
         </nav>
-            <button className='navbar-btn' onClick={showNavbar} >
+            <a href="tel:828-245-3206" className="nav-cta">Call our office</a>
+            <button aria-label="Open navigation" className='navbar-btn' onClick={showNavbar} >
                 <FaBars />
             </button>
     </header>

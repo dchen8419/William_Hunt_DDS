@@ -1,7 +1,36 @@
 .banner_container {
-    background-color: rgb(168, 169, 169);
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  position: relative;
+  min-height: 570px;
+  padding: 74px max(5vw, calc((100vw - 1180px) / 2)) 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5%;
+  overflow: hidden;
+  background: var(--mint);
 }
-
+.hero-content { position: relative; z-index: 1; max-width: 510px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--teal-dark); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow i { width: 8px; height: 8px; border-radius: 50%; background: #e7a46d; }
+.hero-content h1 { margin: 22px 0 18px; color: var(--ink); font-size: clamp(3rem, 5.4vw, 4.9rem); letter-spacing: -.065em; line-height: 1.04; }
+.hero-content h1 em { color: var(--teal); font-style: normal; }
+.hero-content > p { max-width: 430px; margin-bottom: 28px; color: var(--muted); font-size: 1.05rem; line-height: 1.75; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+.hero-button { display: inline-flex; align-items: center; gap: 17px; padding: 15px 21px; border-radius: 6px; color: #fff; background: var(--teal); font-size: .9rem; font-weight: 700; box-shadow: 0 8px 20px rgba(38,123,120,.2); }
+.hero-button:hover { background: var(--teal-dark); }
+.hero-button span { font-size: 1.1rem; }
+.hero-secondary { color: var(--ink); font-size: .87rem; font-weight: 700; border-bottom: 1px solid #a8c8bd; padding-bottom: 4px; }
+.hero-note { display: flex; align-items: center; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid #cbded5; width: max-content; }
+.hero-note strong { font: 800 1.75rem 'Manrope', sans-serif; color: var(--teal); }
+.hero-note span { color: var(--muted); font-size: .75rem; line-height: 1.4; }
+.hero-image { min-height: 430px; border-radius: 48% 48% 8px 8px; background: linear-gradient(180deg, rgba(20,58,60,.02), rgba(20,58,60,.12)), url('../../assets/banner_pic.png') center 43% / cover; box-shadow: var(--shadow); }
+.hero-decoration { position: absolute; right: 3.5%; bottom: 5%; color: #d3e9dc; font-size: 6rem; }
+@media (max-width: 760px) {
+  .banner_container { grid-template-columns: 1fr; gap: 32px; padding: 60px 22px 46px; }
+  .hero-content { max-width: 560px; }
+  .hero-content h1 { font-size: clamp(3rem, 12vw, 4.4rem); }
+  .hero-content > p { font-size: .98rem; }
+  .hero-note { margin-top: 30px; }
+  .hero-image { min-height: 320px; border-radius: 45% 45% 8px 8px; }
+  .hero-decoration { right: 4%; bottom: 0; font-size: 4rem; }
+}
