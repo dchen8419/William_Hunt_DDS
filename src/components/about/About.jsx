@@ -6,7 +6,7 @@ function About() {
   return (
     <section id="About" className='about-container'>
       <div className='about_img_container'>
-        <img id="About" alt='Dr. William Hunt family dentist with over 40 years experience' src={picBanner} className="about_pic"/>
+        <img alt='Dr. William Hunt, dentist in Forest City, North Carolina' src={picBanner} className="about_pic"/>
       </div>
       <div  className='about_welcome_container'>
         <h2 className='about_welcome_title'>Welcome to William Hunt, DDS PA!</h2>

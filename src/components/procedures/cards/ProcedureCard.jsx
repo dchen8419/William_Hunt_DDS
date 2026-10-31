@@ -5,13 +5,13 @@ function ProcedureCard(props) {
     return (
         <div className='procedure_card_container'>
             <div className='procedure_card_image_container'>
-                <img alt={props.img} src={props.img} className='procedure_card_image'/>
+                <img alt="" aria-hidden="true" src={props.img} className='procedure_card_image'/>
             </div>
             <div className='procedure_card_title'>
-                <h1>{props.title}</h1>
+                <h3>{props.title}</h3>
             </div>
             <div className='procedure_card_about'>
-                <h4>{props.about}</h4>
+                <p>{props.about}</p>
             </div>
         </div>
     )

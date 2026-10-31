@@ -6,8 +6,8 @@ function Banner() {
         <section className='banner_container'>
             <div className="hero-content">
                 <span className="eyebrow"><i /> Caring for Forest City since 1979</span>
-                <h1>Healthy smiles,<br /><em>right at home.</em></h1>
-                <p>Personal, thoughtful dental care for every stage of life. Get to know a practice built around you.</p>
+                <h1>Trusted dental care<br /><em>in Forest City, NC.</em></h1>
+                <p>Dr. William Hunt has cared for the Forest City community since 1979. Call the office to ask about appointments and dental services.</p>
                 <div className="hero-actions">
                     <a className="hero-button" href="tel:828-245-3206">Call to schedule <span>↗</span></a>
                     <a className="hero-secondary" href="#Services">Explore our services</a>
