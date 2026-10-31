@@ -10,6 +10,5 @@
 .about-link span { color: var(--teal); }
 @media (max-width: 760px) {
   .about-container { grid-template-columns: 1fr; gap: 42px; padding: 76px 24px; }
-  .about_img_container { max-width: 500px; margin-inline: auto; width: 90%; }
-  .about_pic { height: 360px; }
+  .about_img_container { display: none; }
 }
