@@ -18,7 +18,7 @@
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
 .hero-button { display: inline-flex; align-items: center; gap: 17px; padding: 15px 21px; border-radius: 6px; color: #fff; background: var(--teal); font-size: .9rem; font-weight: 700; box-shadow: 0 8px 20px rgba(38,123,120,.2); }
 .hero-button:hover { background: var(--teal-dark); }
-.hero-button span { font-size: 1.1rem; }
+.hero-button .cta-arrow { width: 1.1rem; height: 1.1rem; flex: none; }
 .hero-secondary { color: var(--ink); font-size: .87rem; font-weight: 700; border-bottom: 1px solid #a8c8bd; padding-bottom: 4px; }
 .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 42px; padding-top: 18px; border-top: 1px solid #cbded5; width: max-content; }
 .hero-note strong { font: 800 1.75rem 'Manrope', sans-serif; color: var(--teal); }

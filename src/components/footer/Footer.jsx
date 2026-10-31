@@ -2,6 +2,7 @@ import React from 'react'
 import '../footer/Footer.css'
 import { HiPhone } from 'react-icons/hi'
 import { ImLocation } from 'react-icons/im'
+import { FiArrowUpRight } from 'react-icons/fi'
 
 function Footer() {
     return (
@@ -12,7 +13,7 @@ function Footer() {
                         <span className="section-kicker">We’re here for you</span>
                         <h2>Let’s take care<br />of your smile.</h2>
                     </div>
-                    <a className="footer-call" href="tel:828-245-3206">Call (828) 245-3206 <span>↗</span></a>
+                    <a className="footer-call" href="tel:828-245-3206">Call (828) 245-3206 <FiArrowUpRight className="cta-arrow" aria-hidden="true" focusable="false" /></a>
                 </div>
                 <div className='footer-contact-container'>
                     <div className='footer-container-item footer-container-contact'>
