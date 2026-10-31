@@ -12,7 +12,16 @@ function About() {
         <span className="section-kicker">A hometown practice</span>
         <h2 className='about_welcome_title'>Dental care rooted<br /><em>in Forest City.</em></h2>
         <p className='about_paragraph'>
-          Welcome to the website of Dr. William (Bill) Hunt, D.D.S. P.A.! A Forest City native, Dr. Hunt has cared for the community for more than 40 years. After graduating from the UNC-Chapel Hill School of Dentistry in 1978, he began serving patients throughout North Carolina with a commitment to high standards, strong ethics, and continually advancing his knowledge. Today, he uses modern technology such as Cone Beam Computed Tomography (CBCT) to support thoughtful, up-to-date care. His commitment to his neighbors reaches beyond the office, too: Dr. Hunt volunteers on the dental bus, helping bring dental care to people in the community who need it. Whether you visit the office or meet him through this community work, you can trust that your dental health matters to him.
+          Welcome to the website of Dr. William (Bill) Hunt, D.D.S., P.A.! A proud native of Forest City, Dr. Hunt has been dedicated to providing quality dental care to his community for more than 40 years.
+        </p>
+        <p className='about_paragraph'>
+          After earning his Doctor of Dental Surgery degree from the UNC-Chapel Hill School of Dentistry in 1978, Dr. Hunt began a lifelong career serving patients throughout North Carolina. In addition to his work in private practice, he has shared his knowledge and experience as an instructor at Asheville-Buncombe Technical Community College.
+        </p>
+        <p className='about_paragraph'>
+          Throughout his career, Dr. Hunt has remained committed to excellence in dentistry, maintaining the highest ethical standards, and continually expanding his knowledge through lifelong learning. His dedication to the community extends beyond the dental office through his volunteer work on the dental bus, where he helps bring essential dental care to individuals and families in need.
+        </p>
+        <p className='about_paragraph'>
+          Whether welcoming you into his practice or serving the community through volunteer work, Dr. Hunt believes everyone deserves compassionate, personalized dental care. Your health, comfort, and well-being are always his priority.
         </p>
         <a className="about-link" href="#Contact">Contact the office <span>→</span></a>
       </div>
