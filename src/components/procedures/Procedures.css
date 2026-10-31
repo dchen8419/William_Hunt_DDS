@@ -1,55 +1,11 @@
-.procedure_background {
-    background-color: rgb(168, 169, 169);
-}
-
-.procedure_dental_service {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.procedure_ul_list {
-    display: inline;
-}
-
-.procedure_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.procedure_container-item {
-    margin: 30px;
-    margin-bottom: 30px;
-    width: 400px;
-    background-color: lightgray;
-    border: 1px solid black;
-}
-
-.procedure_container_crowns_bridges {
-    min-height: 100px;
-}
-
-.procedure_container_restorations {
-    min-height: 200px;
-}
-
-.procedure_container_extractions {
-    min-height: 300px;
-}
-
-.procedure_container_dentures {
-    min-height: 100px;
-}
-
-.procedure_container_partials {
-    min-height: 200px;
-}
-
-.procedure_container_endodontic {
-    min-height: 300px;
-}
-
-.procedure_container-item:hover {
-    box-shadow: 0 4px 8px 0 lightgray, 0 6px 20px 0 lightgray;
-}
+.procedure_background { padding: 92px max(5vw, calc((100vw - 1180px) / 2)) 100px; background: #f0f5f1; }
+.services-heading { text-align: center; max-width: 620px; margin: 0 auto 44px; }
+.services-heading .section-kicker { display: block; }
+.procedure_dental_service { margin: 12px 0; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.055em; }
+.services-heading p { margin: 0; color: var(--muted); line-height: 1.7; }
+.procedure_ul_list { display: block; margin: 0; padding: 0; }
+.procedure_container { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-bottom: 22px; }
+.procedure_container-item { min-height: 0; margin: 0; padding: 22px 20px 26px; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
+.procedure_container-item:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+@media (max-width: 850px) { .procedure_container { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .procedure_background { padding: 70px 20px; } .procedure_container { grid-template-columns: 1fr; gap: 14px; margin-bottom: 14px; } }

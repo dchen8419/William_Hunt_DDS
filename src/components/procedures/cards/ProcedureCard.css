@@ -1,25 +1,6 @@
-.procedure_card_container {
-    padding-top: 15px;
-    text-align: center;
-}
-
-.procedure_card_image_container {
-    display: flex;
-    justify-content: center;
-}
-
-.procedure_card_image {
-    border-radius: 50%;
-    height: 200px;
-    object-fit: contain;
-    padding-top: 5px;
-}
-
-.procedure_card_title {
-    padding-bottom: 5px;
-}
-
-.procedure_card_about {
-    padding-inline: 50px;
-    padding-bottom: 10px;
-}
+.procedure_card_container { height: 100%; text-align: center; }
+.procedure_card_image_container { display: flex; justify-content: center; align-items: center; min-height: 145px; margin-bottom: 12px; }
+.procedure_card_image { width: 132px; height: 132px; object-fit: contain; padding: 10px; border-radius: 50%; background: var(--mint); }
+.procedure_card_title h1 { margin: 0 0 8px; font: 700 1.12rem 'Manrope', sans-serif; letter-spacing: -.025em; }
+.procedure_card_about { max-width: 300px; margin: auto; padding: 0 4px; }
+.procedure_card_about h4 { margin: 0; color: var(--muted); font-size: .86rem; font-weight: 400; line-height: 1.6; }

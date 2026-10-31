@@ -4,7 +4,7 @@ import picBanner from '../../assets/banner_pic.png'
 
 function About() {
   return (
-    <div  className='about-container'>
+    <section id="About" className='about-container'>
       <div className='about_img_container'>
         <img id="About" alt='Dr. William Hunt family dentist with over 40 years experience' src={picBanner} className="about_pic"/>
       </div>
@@ -23,7 +23,7 @@ function About() {
             to those in need. With Dr. Hunt, you can trust that your dental health is in good hands. 
         </h3>
       </div>
-    </div>
+    </section>
   )
 }
 

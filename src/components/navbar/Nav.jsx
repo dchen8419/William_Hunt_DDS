@@ -26,11 +26,12 @@ function Nav() {
             <a href="#About" onClick={showNavbar}>About</a>
             <a href="#Services" onClick={showNavbar}>Dental Services</a>
             <a href="#Contact" onClick={showNavbar}>Contact</a>
-            <button className='navbar-btn nav-close-btn' onClick={showNavbar} >
+            <button aria-label="Close navigation" className='navbar-btn nav-close-btn' onClick={showNavbar} >
                 <FaTimes />
             </button>
         </nav>
-            <button className='navbar-btn' onClick={showNavbar} >
+            <a href="tel:828-245-3206" className="nav-cta">Call our office</a>
+            <button aria-label="Open navigation" className='navbar-btn' onClick={showNavbar} >
                 <FaBars />
             </button>
     </header>

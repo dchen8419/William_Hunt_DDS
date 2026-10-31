@@ -1,27 +1,19 @@
 .header-container {
-    display: flex;
-    background-color: lightgray;
-    align-content: center;
-    justify-content: center;
+  min-height: 42px;
+  padding: 0 max(5vw, calc((100vw - 1180px) / 2));
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: clamp(18px, 3vw, 42px);
+  background: var(--ink);
+  color: #fff;
+  font-size: .82rem;
 }
-
-.header-container div {
-    align-items: center;
-    margin: 10px;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid black
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-@media only screen and (max-width: 1024px) {
-    span.text {
-        display: none;
-    }
+.header-container > div { display: flex; align-items: center; gap: 8px; }
+.header-container .icon { display: flex; color: #a6d6c6; font-size: 1rem; }
+.header-container a { color: inherit; }
+.header-container a:hover { color: #a6d6c6; }
+@media (max-width: 600px) {
+  .header-container { justify-content: center; gap: 18px; padding-inline: 12px; font-size: .75rem; }
+  .header-location { display: none !important; }
 }

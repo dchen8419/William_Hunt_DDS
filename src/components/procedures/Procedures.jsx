@@ -15,8 +15,8 @@ import '../../components/procedures/Procedures.css';
 
 function Procedures() {
     return (
-        <div id="Services" className='procedure_background'>
-            <h1 className='procedure_dental_service'>Dental Services</h1>
+        <section id="Services" className='procedure_background'>
+            <div className="services-heading"><span className="section-kicker">Thoughtful care, all around</span><h2 className='procedure_dental_service'>Services for a healthier smile</h2><p>From preventive visits to restorative care, find the support your smile needs.</p></div>
             <ul className='procedure_ul_list'>
                 <div className='procedure_container'>
                     <div className='procedure_container-item procedure_container_crowns_bridges'>
@@ -74,7 +74,7 @@ function Procedures() {
                     </div>
                 </div>
             </ul>
-        </div>
+        </section>
     )
 }
 
