@@ -15,9 +15,9 @@ function Nav() {
 
     return (
         <header className="site-nav">
-            <a id="home" className="brand" href="#Home" aria-label="William Hunt Dentistry home">
+            <a id="home" className="brand" href="#Home" aria-label="William Hunt, DDS, P.A. home">
                 <img alt='' src={icon} className="dentalicon"/>
-                <span className="brand-copy"><strong>William Hunt, DDS</strong><small>Family Dentistry · Forest City, NC</small></span>
+                <span className="brand-copy"><strong>William Hunt, DDS, P.A.</strong><small>Family Dentistry · Forest City, NC</small></span>
             </a>
         <nav id="primary-navigation" className={menuOpen ? 'responsive_nav' : ''} aria-label="Main navigation">
             <a href="#Home" onClick={() => setMenuOpen(false)}>Home</a>
