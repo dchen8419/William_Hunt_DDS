@@ -1,4 +1,4 @@
-.procedure_background { padding: 96px max(5vw, calc((100vw - 1180px) / 2)) 104px; background: #f8faf8; }
+.procedure_background { padding: 96px max(5vw, calc((100vw - 1180px) / 2)) 104px; background: #e1eeeb; }
 .services-heading { text-align: center; max-width: 620px; margin: 0 auto 52px; }
 .services-heading .section-kicker { display: block; }
 .procedure_dental_service { margin: 12px 0; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.055em; }
