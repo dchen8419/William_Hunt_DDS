@@ -23,6 +23,7 @@ function Nav() {
             <a href="#Home" onClick={() => setMenuOpen(false)}>Home</a>
             <a href="#About" onClick={() => setMenuOpen(false)}>About</a>
             <a href="#Services" onClick={() => setMenuOpen(false)}>Dental Services</a>
+            <a href="#Reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
             <a href="#Contact" onClick={() => setMenuOpen(false)}>Contact</a>
             <button type="button" aria-label="Close navigation" className='navbar-btn nav-close-btn' onClick={() => setMenuOpen(false)} >
                 <FaTimes />
