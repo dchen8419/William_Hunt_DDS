@@ -3,19 +3,24 @@ import '../footer/Footer.css'
 import { HiPhone } from 'react-icons/hi'
 import { ImLocation } from 'react-icons/im'
 import { FiArrowUpRight } from 'react-icons/fi'
+import useScrollReveal from '../../hooks/useScrollReveal'
 
 function Footer() {
+    const topReveal = useScrollReveal()
+    const contactReveal = useScrollReveal()
+    const bottomReveal = useScrollReveal()
+
     return (
         <footer id="Contact" className='footer-container'>
             <div className="footer-inner">
-                <div className="footer-top">
+                <div ref={topReveal.ref} className={`footer-top scroll-reveal ${topReveal.isVisible ? 'is-visible' : ''}`}>
                     <div>
                         <span className="section-kicker">We’re here for you</span>
                         <h2>Let’s take care<br />of your smile.</h2>
                     </div>
                     <a className="footer-call" href="tel:828-245-3206">Call (828) 245-3206 <FiArrowUpRight className="cta-arrow" aria-hidden="true" focusable="false" /></a>
                 </div>
-                <div className='footer-contact-container'>
+                <div ref={contactReveal.ref} className={`footer-contact-container scroll-reveal ${contactReveal.isVisible ? 'is-visible' : ''}`}>
                     <div className='footer-container-item footer-container-contact'>
                         <h3>{React.createElement(ImLocation)} Find us</h3>
                         <address>
@@ -31,7 +36,7 @@ function Footer() {
                         <p>Friday – Sunday · Closed</p>
                     </div>
                 </div>
-                <div className="footer-bottom">
+                <div ref={bottomReveal.ref} className={`footer-bottom scroll-reveal ${bottomReveal.isVisible ? 'is-visible' : ''}`}>
                     <span>© {new Date().getFullYear()} William Hunt, DDS PA</span>
                     <a href="tel:828-245-3206">{React.createElement(HiPhone)} (828) 245-3206</a>
                 </div>

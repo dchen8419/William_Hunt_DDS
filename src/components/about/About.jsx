@@ -1,14 +1,18 @@
 import React from 'react'
 import '../about/About.css'
 import picBanner from '../../assets/banner_pic.png'
+import useScrollReveal from '../../hooks/useScrollReveal'
 
 function About() {
+  const imageReveal = useScrollReveal()
+  const copyReveal = useScrollReveal()
+
   return (
     <section id="About" className='about-container'>
-      <div className='about_img_container'>
+      <div ref={imageReveal.ref} className={`about_img_container scroll-reveal ${imageReveal.isVisible ? 'is-visible' : ''}`}>
         <img alt='Dr. William Hunt, dentist in Forest City, North Carolina' src={picBanner} className="about_pic"/>
       </div>
-      <div className="about-copy">
+      <div ref={copyReveal.ref} className={`about-copy scroll-reveal ${copyReveal.isVisible ? 'is-visible' : ''}`}>
         <span className="section-kicker">A hometown practice</span>
         <h2 className='about_welcome_title'>Dental care rooted<br /><em>in Forest City.</em></h2>
         <p className='about_paragraph'>
