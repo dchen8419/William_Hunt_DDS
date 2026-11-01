@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FiArrowLeft, FiArrowRight, FiExternalLink, FiPause, FiPlay } from 'react-icons/fi'
 import './Reviews.css'
 
@@ -31,9 +31,12 @@ const reviews = [
 ]
 
 function Reviews() {
+  const deckRef = useRef(null)
   const [activeReview, setActiveReview] = useState(0)
   const [isHovered, setIsHovered] = useState(false)
   const [hasFocus, setHasFocus] = useState(false)
+  const [hasEnteredView, setHasEnteredView] = useState(false)
+  const [isInView, setIsInView] = useState(false)
   const [isPlaying, setIsPlaying] = useState(() => (
     typeof window !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
   ))
@@ -42,14 +45,33 @@ function Reviews() {
   const nextReview = reviews[(activeReview + 1) % reviews.length]
 
   useEffect(() => {
-    if (!isPlaying || isHovered || hasFocus) return undefined
+    const deck = deckRef.current
+    if (!deck) return undefined
+
+    if (!('IntersectionObserver' in window)) {
+      setHasEnteredView(true)
+      setIsInView(true)
+      return undefined
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsInView(entry.isIntersecting)
+      if (entry.isIntersecting) setHasEnteredView(true)
+    }, { threshold: 0.15 })
+
+    observer.observe(deck)
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!isPlaying || !isInView || isHovered || hasFocus) return undefined
 
     const interval = window.setInterval(() => {
       setActiveReview((current) => (current + 1) % reviews.length)
     }, 7000)
 
     return () => window.clearInterval(interval)
-  }, [isPlaying, isHovered, hasFocus])
+  }, [isPlaying, isInView, isHovered, hasFocus])
 
   const showReview = (index) => {
     setActiveReview((index + reviews.length) % reviews.length)
@@ -60,10 +82,14 @@ function Reviews() {
     setIsPlaying(!isPlaying)
   }
 
-  const isAutoAdvancing = isPlaying && !isHovered && !hasFocus
+  const isAutoAdvancing = isPlaying && isInView && !isHovered && !hasFocus
 
   return (
-    <section id="Reviews" className="reviews-section" aria-labelledby="reviews-title">
+    <section
+      id="Reviews"
+      className={hasEnteredView ? 'reviews-section is-visible' : 'reviews-section'}
+      aria-labelledby="reviews-title"
+    >
       <div className="reviews-inner">
         <div className="reviews-heading">
           <span className="section-kicker">Kind words from our patients</span>
@@ -83,7 +109,7 @@ function Reviews() {
             if (!event.currentTarget.contains(event.relatedTarget)) setHasFocus(false)
           }}
         >
-          <div className="review-deck">
+          <div className="review-deck" ref={deckRef}>
             <button
               type="button"
               className="review-peek review-peek-previous"
