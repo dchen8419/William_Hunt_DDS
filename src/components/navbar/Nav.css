@@ -28,6 +28,7 @@
 .site-nav .nav-cta:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 4px; }
 @media (max-width: 760px) {
   .site-nav { height: 72px; padding-inline: 20px; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .brand-copy strong { font-size: .9rem; }
   .brand-copy small { font-size: .65rem; }
   .site-nav .navbar-btn { display: block; }
   .nav-cta { display: none; }

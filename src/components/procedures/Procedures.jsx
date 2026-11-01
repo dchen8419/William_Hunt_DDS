@@ -28,7 +28,7 @@ function Procedures() {
 
     return (
         <section id="Services" className='procedure_background'>
-            <div className="services-heading"><span className="section-kicker">Dental care in Forest City, NC</span><h2 className='procedure_dental_service'>Dental services</h2><p>Explore dental services available at William Hunt, DDS PA. Call the office with questions or to ask about scheduling.</p></div>
+            <div className="services-heading"><span className="section-kicker">Dental care in Forest City, NC</span><h2 className='procedure_dental_service'>Dental services</h2><p>Explore dental services available at William Hunt, DDS, P.A. Call the office with questions or to ask about scheduling.</p></div>
             <div className='procedure_container' role='list'>
                 {services.map((service) => (
                     <div className='procedure_container-item' key={service.title} role='listitem'>
