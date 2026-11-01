@@ -8,7 +8,6 @@ import useScrollReveal from '../../hooks/useScrollReveal'
 function Footer() {
     const topReveal = useScrollReveal()
     const contactReveal = useScrollReveal()
-    const bottomReveal = useScrollReveal()
 
     return (
         <footer id="Contact" className='footer-container'>
@@ -36,8 +35,8 @@ function Footer() {
                         <p>Friday – Sunday · Closed</p>
                     </div>
                 </div>
-                <div ref={bottomReveal.ref} className={`footer-bottom scroll-reveal ${bottomReveal.isVisible ? 'is-visible' : ''}`}>
-                    <span>© {new Date().getFullYear()} William Hunt, DDS PA</span>
+                <div className="footer-bottom">
+                    <span>© {new Date().getFullYear()} William Hunt, DDS, P.A. All rights reserved.</span>
                     <a href="tel:828-245-3206">{React.createElement(HiPhone)} (828) 245-3206</a>
                 </div>
             </div>
