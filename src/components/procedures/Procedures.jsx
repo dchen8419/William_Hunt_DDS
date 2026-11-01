@@ -10,10 +10,13 @@ import Restorations from '../../assets/restoration.png';
 import Bleaching from '../../assets/bleaching.png';
 import Endodontics from '../../assets/root_canal.png';
 import '../../components/procedures/Procedures.css';
+import useScrollReveal from '../../hooks/useScrollReveal'
 
 
 
 function Procedures() {
+    const headingReveal = useScrollReveal()
+    const servicesReveal = useScrollReveal()
     const services = [
         { img: Crowns, title: 'Crowns', about: 'We create impressions for perfect crowns' },
         { img: Veneers, title: 'Veneers', about: 'Let us help you improve your smile!' },
@@ -28,10 +31,10 @@ function Procedures() {
 
     return (
         <section id="Services" className='procedure_background'>
-            <div className="services-heading"><span className="section-kicker">Dental care in Forest City, NC</span><h2 className='procedure_dental_service'>Dental services</h2><p>Explore dental services available at William Hunt, DDS PA. Call the office with questions or to ask about scheduling.</p></div>
-            <div className='procedure_container' role='list'>
-                {services.map((service) => (
-                    <div className='procedure_container-item' key={service.title} role='listitem'>
+            <div ref={headingReveal.ref} className={`services-heading scroll-reveal ${headingReveal.isVisible ? 'is-visible' : ''}`}><span className="section-kicker">Dental care in Forest City, NC</span><h2 className='procedure_dental_service'>Dental services</h2><p>Explore dental services available at William Hunt, DDS PA. Call the office with questions or to ask about scheduling.</p></div>
+            <div ref={servicesReveal.ref} className={`procedure_container ${servicesReveal.isVisible ? 'is-visible' : ''}`} role='list'>
+                {services.map((service, index) => (
+                    <div className='procedure_container-item' key={service.title} role='listitem' style={{ '--reveal-delay': `${index * 70}ms` }}>
                         <ProcedureCard img={service.img} title={service.title} about={service.about} />
                     </div>
                 ))}

@@ -28,6 +28,10 @@ h1, h2, h3, h4, p { margin-top: 0; }
 h1, h2, h3 { font-family: 'Manrope', sans-serif; }
 ::selection { background: #c7e5d9; }
 
+.scroll-reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .9s cubic-bezier(.2, .75, .25, 1); }
+.scroll-reveal.is-visible { opacity: 1; transform: translateY(0); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+  .scroll-reveal { opacity: 1; transform: none; transition: none; }
 }
