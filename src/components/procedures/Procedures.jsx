@@ -14,65 +14,27 @@ import '../../components/procedures/Procedures.css';
 
 
 function Procedures() {
+    const services = [
+        { img: Crowns, title: 'Crowns', about: 'We create impressions for perfect crowns' },
+        { img: Veneers, title: 'Veneers', about: 'Let us help you improve your smile!' },
+        { img: Bridges, title: 'Bridges', about: 'Using state-of-the-art tools to optimize area for comfortable bridges' },
+        { img: Restorations, title: 'Composite Restorations', about: 'We can repair and improve your oral health' },
+        { img: Dentures, title: 'Dentures', about: 'Let us help you fit new dentures' },
+        { img: Bleaching, title: 'Bleaching', about: 'Let us whiten your smile!' },
+        { img: Endodontics, title: 'Endodontics', about: 'We create treatments for your oral health' },
+        { img: Extraction, title: 'Extractions', about: 'Conservative approach with all tooth extractions' },
+        { img: Partials, title: 'Partials', about: 'Creating state-of-the-art partials' },
+    ];
+
     return (
         <section id="Services" className='procedure_background'>
             <div className="services-heading"><span className="section-kicker">Dental care in Forest City, NC</span><h2 className='procedure_dental_service'>Dental services</h2><p>Explore dental services available at William Hunt, DDS PA. Call the office with questions or to ask about scheduling.</p></div>
-            <div className='procedure_ul_list'>
-                <div className='procedure_container'>
-                    <div className='procedure_container-item procedure_container_crowns_bridges'>
-                        <ProcedureCard
-                            img={Crowns} title='Crowns' about='We create impressions for perfect crowns'
-                        />
+            <div className='procedure_container' role='list'>
+                {services.map((service) => (
+                    <div className='procedure_container-item' key={service.title} role='listitem'>
+                        <ProcedureCard img={service.img} title={service.title} about={service.about} />
                     </div>
-                    <div className='procedure_container-item procedure_container_restorations'>
-                        <ProcedureCard 
-                            img={Veneers} title='Veneers' about='Let us help you improve your smile!'
-                        />
-                    </div>
-                    <div className='procedure_container-item procedure_container_extractions'>
-                        <ProcedureCard 
-                            img={Bridges} title='Bridges' about='Using state-of-the-art tools to optimize area for comfortable bridges'
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className='procedure_ul_list'>
-                <div className='procedure_container'>
-                    <div className='procedure_container-item procedure_container_dentures'>
-                        <ProcedureCard 
-                            img={Restorations} title='Composite Restorations' about='We can repair and improve your oral health'
-                        />
-                    </div>
-                    <div className='procedure_container-item procedure_container_partials'>
-                        <ProcedureCard 
-                            img={Dentures} title='Dentures' about='Let us help you fit new dentures'
-                        />
-                    </div>
-                    <div className='procedure_container-item procedure_container_endodontic'>
-                        <ProcedureCard 
-                            img={Bleaching} title='Bleaching' about='Let us whiten your smile!'
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className='procedure_ul_list'>
-                <div className='procedure_container'>
-                    <div className='procedure_container-item procedure_container_dentures'>
-                        <ProcedureCard 
-                            img={Endodontics} title='Endodontics' about='We create treatments for your oral health'
-                        />
-                    </div>
-                    <div className='procedure_container-item procedure_container_partials'>
-                        <ProcedureCard 
-                            img={Extraction} title='Extractions' about='Conservative approach with all tooth extractions'
-                        />
-                    </div>
-                    <div className='procedure_container-item procedure_container_partials'>
-                        <ProcedureCard 
-                            img={Partials} title='Partials' about='Creating state-of-the-art partials'
-                        />
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
     )

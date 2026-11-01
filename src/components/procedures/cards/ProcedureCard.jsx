@@ -7,11 +7,13 @@ function ProcedureCard(props) {
             <div className='procedure_card_image_container'>
                 <img alt="" aria-hidden="true" src={props.img} className='procedure_card_image'/>
             </div>
-            <div className='procedure_card_title'>
-                <h3>{props.title}</h3>
-            </div>
-            <div className='procedure_card_about'>
-                <p>{props.about}</p>
+            <div className='procedure_card_copy'>
+                <div className='procedure_card_title'>
+                    <h3>{props.title}</h3>
+                </div>
+                <div className='procedure_card_about'>
+                    <p>{props.about}</p>
+                </div>
             </div>
         </div>
     )
