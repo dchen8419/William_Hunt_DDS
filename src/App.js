@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/navbar/Nav';
 import Procedures from './components/procedures/Procedures';
+import Reviews from './components/reviews/Reviews';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Banner />
         <About />
         <Procedures />
+        <Reviews />
       </main>
       <Footer />
     </div>
