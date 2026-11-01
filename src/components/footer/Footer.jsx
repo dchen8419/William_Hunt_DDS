@@ -32,7 +32,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <span>© {new Date().getFullYear()} William Hunt, DDS PA</span>
+                    <span>© {new Date().getFullYear()} William Hunt, DDS, P.A. All rights reserved.</span>
                     <a href="tel:828-245-3206">{React.createElement(HiPhone)} (828) 245-3206</a>
                 </div>
             </div>
